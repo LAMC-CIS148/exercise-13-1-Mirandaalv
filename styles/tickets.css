@@ -1,7 +1,7 @@
-/* the styles for the elements */
-* {
-	margin: 0;
-	padding: 0;
+/* the styles for the form */
+fieldset {
+  margin: 0;
+  padding: .5em 1em .5em 1em; /* Top, Right, Bottom, Left */
 }
 html {
 	background-color: white;
@@ -52,10 +52,10 @@ fieldset {
     padding-top: .5em;
 }
 legend {
-    color: #931420;
-    font-weight: bold;
-    font-size: 85%;
-    margin-bottom: .5em;
+  color: black;
+  font-weight: bold;
+  font-size: 85%;
+  margin-bottom: .5em;
 }
 label {
     float: left;
@@ -70,15 +70,17 @@ input, select {
     margin-left: .5em;
     margin-bottom: .5em;
 }
-input:required, input[required] {
-	border: 3px solid red;
-}
-input:valid {
-	border: 1px solid black;
-}
+input:required,
+input[required],
 input:invalid {
-	box-shadow: none;
+  border: 2px solid #800000;
+  color: #800000;
 }
+
+input:valid {
+  border: 1px solid black;
+}
+
 br {
     clear: both;
 }
